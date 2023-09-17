@@ -1,0 +1,32 @@
+/**
+ * 
+ */
+package com.fci.hotel.service.HotelService.exceptions;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.RestControllerAdvice;
+
+/**
+ * @author deby7 8:37:39 am 2023 HotelService TODO
+ */
+
+@RestControllerAdvice
+public class GlobalExceptionhandler {
+
+	@ExceptionHandler(ResourceNotFoundException.class )
+public ResponseEntity<Map<String, Object>>notFoundHandler(ResourceNotFoundException exception)
+{
+		Map map=new HashMap();
+		map.put("message", exception.getMessage());
+		map.put("success", false);
+		map.put("status", HttpStatus.NOT_FOUND);
+		return ResponseEntity.status(HttpStatus.NOT_FOUND).body(map);
+		
+}
+
+}
