@@ -15,22 +15,18 @@ import com.fci.hotel.service.HotelService.repositories.HotelRepository;
 import com.fci.hotel.service.HotelService.services.HotelService;
 
 /**
- * @author deby7
- *7:49:31 am
- *2023
- *HotelService
- *TODO
+ * @author deby7 7:49:31 am 2023 HotelService TODO
  */
 @Service
-public class HotelServiceImpl implements HotelService{
-	
+public class HotelServiceImpl implements HotelService {
+
 	@Autowired
 	private HotelRepository hotelRepository;
 
 	@Override
 	public Hotel create(Hotel hotel) {
 		// TODO Auto-generated method stub
-		String hotelId=UUID.randomUUID().toString();
+		String hotelId = UUID.randomUUID().toString();
 		hotel.setId(hotelId);
 		return hotelRepository.save(hotel);
 	}
@@ -44,7 +40,8 @@ public class HotelServiceImpl implements HotelService{
 	@Override
 	public Hotel get(String id) {
 		// TODO Auto-generated method stub
-		return hotelRepository.findById(id).orElseThrow(()-> new ResourceNotFoundException("Hotel with given id not found !!!"));
+		return hotelRepository.findById(id)
+				.orElseThrow(() -> new ResourceNotFoundException("Hotel with given id not found !!!"));
 	}
 
 }

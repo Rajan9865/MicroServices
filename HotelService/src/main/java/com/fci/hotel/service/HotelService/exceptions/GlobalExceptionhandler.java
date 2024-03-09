@@ -18,15 +18,14 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 @RestControllerAdvice
 public class GlobalExceptionhandler {
 
-	@ExceptionHandler(ResourceNotFoundException.class )
-public ResponseEntity<Map<String, Object>>notFoundHandler(ResourceNotFoundException exception)
-{
-		Map map=new HashMap();
+	@ExceptionHandler(ResourceNotFoundException.class)
+	public ResponseEntity<Map<String, Object>> notFoundHandler(ResourceNotFoundException exception) {
+		Map map = new HashMap();
 		map.put("message", exception.getMessage());
 		map.put("success", false);
 		map.put("status", HttpStatus.NOT_FOUND);
 		return ResponseEntity.status(HttpStatus.NOT_FOUND).body(map);
-		
-}
+
+	}
 
 }

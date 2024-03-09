@@ -13,11 +13,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 /**
- * @author deby7
- *10:20:11 pm
- *2023
- *HotelService
- *TODO
+ * @author deby7 10:20:11 pm 2023 HotelService TODO
  */
 @Getter
 @Setter
