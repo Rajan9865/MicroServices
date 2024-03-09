@@ -17,6 +17,7 @@ import com.fci.user.service.UserService.entities.User;
 public interface UserRepository extends JpaRepository<User, String>{
 	
 	// if you want to implement  any custom method or query 
+	
 	// write to free	
 
 }

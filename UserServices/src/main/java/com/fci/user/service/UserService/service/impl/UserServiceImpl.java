@@ -34,9 +34,13 @@ public class UserServiceImpl implements UserService{
 	@Override
 	public User saveUser(User user) {
 		
-		//generate unique userid
+		//generate unique userId
+		/*
 		String randomUserId = UUID.randomUUID().toString();
 		user.setUserId(randomUserId);
+		return userRepository.save(user);
+		*/
+		user.setUserId(UUID.randomUUID().toString());
 		return userRepository.save(user);
 	}
  

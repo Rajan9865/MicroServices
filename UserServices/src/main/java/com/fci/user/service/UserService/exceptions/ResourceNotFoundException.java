@@ -12,6 +12,11 @@ package com.fci.user.service.UserService.exceptions;
  */
 public class ResourceNotFoundException extends RuntimeException {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	//extra properties that you want to manage code
 	public ResourceNotFoundException()
 	{
