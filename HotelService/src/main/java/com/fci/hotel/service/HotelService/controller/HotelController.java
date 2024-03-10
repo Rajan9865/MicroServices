@@ -28,29 +28,27 @@ import com.fci.hotel.service.HotelService.services.HotelService;
 @RestController
 @RequestMapping("/hotels")
 public class HotelController {
-	
+
 	@Autowired
 	private HotelService hotelService;
 
 	// create
-	
+
 	@PostMapping
-	public ResponseEntity<Hotel>createHotel(@RequestBody Hotel hotel)
-	{
+	public ResponseEntity<Hotel> createHotel(@RequestBody Hotel hotel) {
 		return ResponseEntity.status(HttpStatus.CREATED).body(hotelService.create(hotel));
 	}
-	
-	// Get single 
+
+	// Get single
 	@GetMapping("/{hotelId}")
-	public ResponseEntity<Hotel>getId(@PathVariable String hotelId)
-	{
+	public ResponseEntity<Hotel> getId(@PathVariable String hotelId) {
 		return ResponseEntity.status(HttpStatus.OK).body(hotelService.get(hotelId));
 	}
-  // get all 
+
+	// get all
 	@GetMapping
-	public ResponseEntity<List<Hotel>>getAll()
-	{
+	public ResponseEntity<List<Hotel>> getAll() {
 		return ResponseEntity.ok(hotelService.getAll());
 	}
-	
+
 }

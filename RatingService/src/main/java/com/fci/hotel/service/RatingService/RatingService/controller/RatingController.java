@@ -19,58 +19,37 @@ import com.fci.hotel.service.RatingService.RatingService.entity.Rating;
 import com.fci.hotel.service.RatingService.RatingService.services.RatingService;
 
 /**
- * @author deby7
- *7:38:47 am
- *2023
- *RatingService
- *TODO
+ * @author deby7 7:38:47 am 2023 RatingService TODO
  */
 @RestController
 @RequestMapping("/ratings")
 public class RatingController {
-	
+
 	@Autowired
 	private RatingService ratingService;
-	
-	//create rating
+
+	// create rating
 	@PostMapping
-	public ResponseEntity<Rating>create(@RequestBody Rating rating)
-	{
+	public ResponseEntity<Rating> create(@RequestBody Rating rating) {
 		return ResponseEntity.status(HttpStatus.CREATED).body(ratingService.create(rating));
 	}
-	
-	// get all 
+
+	// get all
 	@GetMapping
-	public ResponseEntity<List<Rating>>getRatings()
-	{
+	public ResponseEntity<List<Rating>> getRatings() {
 		return ResponseEntity.ok(ratingService.getRatings());
 	}
-	
-	// get All Data Based on  hotelId
+
+	// get All Data Based on hotelId
 	@GetMapping("/users/{userId}")
-	public ResponseEntity<List<Rating>>getRatingByUserId(@PathVariable String userId)
-	{
+	public ResponseEntity<List<Rating>> getRatingByUserId(@PathVariable String userId) {
 		return ResponseEntity.ok(ratingService.getRatingByUserId(userId));
 	}
-	
+
 	// get all data Based On HotelId
 	@GetMapping("/hotels/{hotelId}")
-	public ResponseEntity<List<Rating>>getRatingsByHotelId(@PathVariable String hotelId)
-	{
+	public ResponseEntity<List<Rating>> getRatingsByHotelId(@PathVariable String hotelId) {
 		return ResponseEntity.ok(ratingService.getRatingByHotelId(hotelId));
 	}
-	
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
