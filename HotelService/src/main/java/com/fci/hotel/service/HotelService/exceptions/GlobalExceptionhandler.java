@@ -20,12 +20,11 @@ public class GlobalExceptionhandler {
 
 	@ExceptionHandler(ResourceNotFoundException.class)
 	public ResponseEntity<Map<String, Object>> notFoundHandler(ResourceNotFoundException exception) {
-		Map map = new HashMap();
-		map.put("message", exception.getMessage());
-		map.put("success", false);
-		map.put("status", HttpStatus.NOT_FOUND);
-		return ResponseEntity.status(HttpStatus.NOT_FOUND).body(map);
-
+		 Map<String, Object> response = new HashMap<>();
+		    response.put("message", exception.getMessage());
+		    response.put("success", false);
+		    response.put("status", HttpStatus.NOT_FOUND);
+		    return ResponseEntity.status(HttpStatus.NOT_FOUND).body(response);
 	}
 
 }
