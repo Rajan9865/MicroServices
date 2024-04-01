@@ -18,11 +18,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 /**
- * @author deby7
- *11:12:45 pm
- *2023
- *UserService
- *TODO
+ * @author deby7 11:12:45 pm 2023 UserService TODO
  */
 @Entity
 @Table(name = "micro_user")
@@ -31,21 +27,21 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 public class User {
-	
+
 	@Id
 	@Column(name = "ID")
 	private String userId;
-	
-	@Column(name = "NAME",length = 20)
+
+	@Column(name = "NAME", length = 20)
 	private String name;
-	
+
 	@Column(name = "EMAIL")
 	private String email;
-	
+
 	@Column(name = "ABOUT")
 	private String about;
-	
-	// other user properties you can add here this 
+
+	// other user properties you can add here this
 	@Transient
-	private List<Rating>ratings=new ArrayList<>();
+	private List<Rating> ratings = new ArrayList<>();
 }

@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.fci.hotel.service.RatingService.RatingService.entity.Rating;
+import com.fci.hotel.service.RatingService.RatingService.exception.RatingNotFoundException;
 import com.fci.hotel.service.RatingService.RatingService.repository.RatingRepository;
 import com.fci.hotel.service.RatingService.RatingService.services.RatingService;
 
@@ -33,7 +34,11 @@ public class RatingServiceImpl implements RatingService {
 
 	@Override
 	public List<Rating> getRatingByUserId(String userId) {
-		return ratingRepository.findByUserId(userId);
+		List<Rating>ratings=ratingRepository.findByUserId(userId);
+		if (ratings.isEmpty()) {
+			throw new RatingNotFoundException(userId);
+		}
+		return ratings;
 	}
 
 	@Override
