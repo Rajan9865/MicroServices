@@ -12,11 +12,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 /**
- * @author deby7
- *12:02:37 am
- *2023
- *UserService
- *TODO
+ * @author deby7 12:02:37 am 2023 UserService TODO
  */
 @Getter
 @Setter
@@ -24,10 +20,9 @@ import lombok.Setter;
 @AllArgsConstructor
 @Builder
 public class ApiResponse {
-	
+
 	private String message;
 	private boolean success;
 	private HttpStatus status;
-	
 
 }

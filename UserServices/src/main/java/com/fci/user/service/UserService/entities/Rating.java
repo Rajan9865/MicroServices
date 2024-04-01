@@ -9,11 +9,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 /**
- * @author deby7
- *7:54:35 am
- *2023
- *UserService
- *TODO
+ * @author deby7 7:54:35 am 2023 UserService TODO
  */
 @Getter
 @Setter
@@ -25,5 +21,7 @@ public class Rating {
 	private String hotelId;
 	private int rating;
 	private String feedback;
+
+	private Hotel hotel;
 
 }
