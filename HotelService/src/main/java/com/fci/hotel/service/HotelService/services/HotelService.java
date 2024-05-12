@@ -5,6 +5,8 @@ package com.fci.hotel.service.HotelService.services;
 
 import java.util.List;
 
+import org.springframework.http.ResponseEntity;
+
 import com.fci.hotel.service.HotelService.Enties.Hotel;
 
 /**
@@ -20,5 +22,7 @@ public interface HotelService {
 
 	// get single
 	Hotel get(String id);
+	// delete by ID
+	ResponseEntity<String> deleteById(String id);
 
 }

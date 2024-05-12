@@ -24,6 +24,7 @@ public interface UserService {
 	User getUser(String userId);
 
 	// TODO:delete
+	void deleteUser(Integer userId);
 	// TODO:update
 
 }

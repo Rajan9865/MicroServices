@@ -18,9 +18,12 @@ import org.springframework.web.bind.annotation.RestController;
 import com.fci.user.service.UserService.entities.User;
 import com.fci.user.service.UserService.service.UserService;
 
+import lombok.extern.slf4j.Slf4j;
+
 /**
  * @author deby7 7:11:58 am 2023 UserService TODO
  */
+@Slf4j
 @RestController
 @RequestMapping("/users")
 public class UserController {
@@ -35,8 +38,8 @@ public class UserController {
 	 */
 	@PostMapping
 	public ResponseEntity<User> createUser(@RequestBody User user) {
-		User user1 = userService.saveUser(user);
-		return ResponseEntity.status(HttpStatus.CREATED).body(user1);
+		log.info("user create succecessfully {}",user.getName());
+		return ResponseEntity.status(HttpStatus.CREATED).body(userService.saveUser(user));
 	}
 
 	// single user get
@@ -61,5 +64,5 @@ public class UserController {
 		List<User> allUser = userService.getAllUser();
 		return ResponseEntity.ok(allUser);
 	}
-
+	
 }
