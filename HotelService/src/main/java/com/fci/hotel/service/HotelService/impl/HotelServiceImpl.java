@@ -4,9 +4,12 @@
 package com.fci.hotel.service.HotelService.impl;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import com.fci.hotel.service.HotelService.Enties.Hotel;
@@ -39,6 +42,17 @@ public class HotelServiceImpl implements HotelService {
 	public Hotel get(String id) {
 		return hotelRepository.findById(id)
 				.orElseThrow(() -> new ResourceNotFoundException("Hotel with given id not found !!!"));
+	}
+
+	@Override
+	public ResponseEntity<String> deleteById(String id) {
+		Optional<Hotel> optionalHotel = hotelRepository.findById(id);
+        if (optionalHotel.isPresent()) {
+        	hotelRepository.deleteById(id);
+            return ResponseEntity.status(HttpStatus.OK).body("Hotel with Id " + id + " deleted Successfully");
+        } else {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Hotel not found with this id " + id);
+        }
 	}
 
 }

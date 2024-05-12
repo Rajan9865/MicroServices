@@ -15,7 +15,7 @@ public class ResourceNotFoundException extends RuntimeException {
 
 	// extra properties that you want to manage code
 	public ResourceNotFoundException() {
-		super("Resource not ffound on server");
+		super("Resource not found on server");
 	}
 
 	public ResourceNotFoundException(String message) {

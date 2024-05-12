@@ -4,9 +4,12 @@
 package com.fci.user.service.UserService.service.impl;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
+import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.loadbalancer.EmptyResponse;
@@ -59,43 +62,32 @@ public class UserServiceImpl implements UserService {
 	@SuppressWarnings("unchecked")
 	@Override
 	public User getUser(String userId) {
-		// get user from database with the help of user repository
-		User user = userRepository.findById(userId).orElseThrow(
-				() -> new ResourceNotFoundException("User with given id is not found on server !! " + userId));
-		// fetch rating Of the above user from RATING SERVICE
-		// localhost:8083/ratings/users/f2214aa0-76e1-46b6-988e-28f34716b570
-//		@SuppressWarnings("unchecked")
-//		ArrayList<Rating> ratingsOfUser = restTemplate.getForObject("http://localhost:8083/ratings/users/"+user.getUserId(), ArrayList.class);
-//		log.info("Api calling.. {}",ratingsOfUser);
-//		user.setRatings(ratingsOfUser);
-//		return user;-
-
-		try {
-			ArrayList<Rating> ratingsOfUser = restTemplate
-					.getForObject("http://localhost:8083/ratings/users/" + user.getUserId(), ArrayList.class);
-			log.info("API calling.. {}", ratingsOfUser);
-			List<Rating>ratingList= ratingsOfUser.stream().map(rating->
-			{
-				// api call to hotel service to get the hotel
-				// http://localhost:8082/hotels/d00d8a5e-8c26-4394-afd2-50cae7613f31
-				ResponseEntity<Hotel>forEntity= restTemplate.getForEntity("http://localhost:8082/hotels/"rating.getHotelId(), Hotel.class);
-				Hotel hotel=forEntity.getBody();
-				log.info(" response status code :{}")
-				// set the hotel to string
-				// return the rating
-				
-			})
-			
-			user.setRatings(ratingsOfUser);
-		} catch (ResourceAccessException e) {
-			log.error("Error calling the ratings service: {}", e.getMessage());
-			// Handle the exception or return a default response
-			// For example, you might set a default value for ratings or return an error
-			// message
-			user.setRatings(Collections.emptyList()); // Set default empty list
-		}
+		// get user from database with the help of repository
+		User user=userRepository.findById(userId).orElseThrow(()-> new ResourceNotFoundException("User with given id is not found on server !! : " + userId));
+		// fetching rating of the above user from rating service
+		// http://localhost:8081/users/47ff61a9-aa79-4932-9513-b87960a55f92
+		Rating[] ratingOfUser=restTemplate.getForObject("http://RATING-SERVICE/ratings/users/"+user.getUserId(),Rating[].class);
+		log.info(" {}  ",ratingOfUser);
+		List<Rating> ratings = Arrays.asList(ratingOfUser);
+        List<Rating> ratingList = ratings.stream().map(rating -> {
+			// api to call hotel service to get the hotel
+			//localhost:8082/hotels/daedb1ab-8ea5-487d-bd3a-46d178cffa48
+			ResponseEntity<Hotel> forEntity = restTemplate.getForEntity("http://HOTEL-SERVICE/hotels/"+rating.getHotelId(),Hotel.class);
+			Hotel hotel = forEntity.getBody();
+			log.info("response status code {} ",forEntity.getStatusCode());
+			//set the hotel to rating
+			rating.setHotel(hotel);
+			//return the rating
+			return rating;
+		}).collect(Collectors.toList());
+		user.setRatings(ratingList);
 		return user;
+	}
 
+	@Override
+	public void deleteUser(Integer userId) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
