@@ -18,6 +18,9 @@ import org.springframework.web.bind.annotation.RestController;
 import com.fci.user.service.UserService.entities.User;
 import com.fci.user.service.UserService.service.UserService;
 
+import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
+import io.github.resilience4j.ratelimiter.annotation.RateLimiter;
+import io.github.resilience4j.retry.annotation.Retry;
 import lombok.extern.slf4j.Slf4j;
 
 /**
@@ -48,12 +51,31 @@ public class UserController {
 	 * @param userId
 	 * @return
 	 */
+//	int retryCount=1;
+	
+//	@CircuitBreaker(name = "ratingHotelBreaker", fallbackMethod = "ratingHotelFallback")
+//	@Retry(name = "ratingHotelService",fallbackMethod = "ratingHotelFallback")
+	@RateLimiter(name = "userRateLimiter",fallbackMethod = "ratingHotelFallback")
 	@GetMapping("/{userId}")
 	public ResponseEntity<User> getSingleUser(@PathVariable String userId) {
+//		log.info("Retry count : {}",retryCount);
+//		retryCount++;
+		log.info("hello users ...................");
 		User user = userService.getUser(userId);
 		return ResponseEntity.ok(user);
 	}
-
+	// Creating fall back methods for circuitBreacker
+	public ResponseEntity<User>ratingHotelFallback(String userid,Exception ex)
+	{
+		log.info(" fallBack is executed because service is down :",ex.getMessage());
+		ex.printStackTrace();
+		User user = User.builder().email("rajan@gmail.com")
+					  .name("Rajan kumar")
+					  .about("this user is created dummy because some service is down")
+					  .userId("12713t17")
+					  .build();
+		return new ResponseEntity<>(user,HttpStatus.BAD_REQUEST);
+	}
 	// get all users
 	/**
 	 * 
