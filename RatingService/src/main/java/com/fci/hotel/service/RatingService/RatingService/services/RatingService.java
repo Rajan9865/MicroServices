@@ -8,7 +8,7 @@ import java.util.List;
 import com.fci.hotel.service.RatingService.RatingService.entity.Rating;
 
 /**
- * @author deby7 7:06:23 am 2023 RatingService TODO
+ * @author Rajan kumar 7:06:23 am 2023 RatingService TODO
  */
 public interface RatingService {
 

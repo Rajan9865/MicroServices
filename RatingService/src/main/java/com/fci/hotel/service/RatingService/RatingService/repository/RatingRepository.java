@@ -10,7 +10,7 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 import com.fci.hotel.service.RatingService.RatingService.entity.Rating;
 
 /**
- * @author deby7 7:04:07 am 2023 RatingService TODO
+ * @author Rajan kumar 7:04:07 am 2023 RatingService TODO
  */
 public interface RatingRepository extends MongoRepository<Rating, String> {
 

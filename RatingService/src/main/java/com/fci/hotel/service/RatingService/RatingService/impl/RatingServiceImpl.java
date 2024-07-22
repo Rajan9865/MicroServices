@@ -14,7 +14,7 @@ import com.fci.hotel.service.RatingService.RatingService.repository.RatingReposi
 import com.fci.hotel.service.RatingService.RatingService.services.RatingService;
 
 /**
- * @author deby7 7:11:56 am 2023 RatingService TODO
+ * @author Rajan kumar 7:11:56 am 2023 RatingService TODO
  */
 @Service
 public class RatingServiceImpl implements RatingService {

@@ -4,7 +4,7 @@
 package com.fci.hotel.service.HotelService.exceptions;
 
 /**
- * @author deby7 7:57:58 am 2023 HotelService TODO
+ * @author Rajan kumar 7:57:58 am 2023 HotelService TODO
  */
 public class ResourceNotFoundException extends RuntimeException {
 

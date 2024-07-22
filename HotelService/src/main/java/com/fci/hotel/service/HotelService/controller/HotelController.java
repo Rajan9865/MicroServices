@@ -22,7 +22,7 @@ import com.fci.hotel.service.HotelService.repositories.HotelRepository;
 import com.fci.hotel.service.HotelService.services.HotelService;
 
 /**
- * @author deby7
+ * @author Rajan kumar
  *8:23:08 am
  *2023
  *HotelService

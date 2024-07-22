@@ -18,7 +18,7 @@ import com.fci.hotel.service.HotelService.repositories.HotelRepository;
 import com.fci.hotel.service.HotelService.services.HotelService;
 
 /**
- * @author deby7 7:49:31 am 2023 HotelService TODO
+ * @author Rajan kumar 7:49:31 am 2023 HotelService TODO
  */
 @Service
 public class HotelServiceImpl implements HotelService {

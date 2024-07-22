@@ -4,7 +4,7 @@
 package com.fci.hotel.service.RatingService.RatingService.exception;
 
 /**
- * @author deby7
+ * @author Rajan kumar
  *10:38:12 am
  *2024
  *RatingService

@@ -19,7 +19,7 @@ import com.fci.hotel.service.RatingService.RatingService.entity.Rating;
 import com.fci.hotel.service.RatingService.RatingService.services.RatingService;
 
 /**
- * @author deby7 7:38:47 am 2023 RatingService TODO
+ * @author Rajan kumar 7:38:47 am 2023 RatingService TODO
  */
 @RestController
 @RequestMapping("/ratings")

@@ -10,7 +10,7 @@ import org.springframework.http.ResponseEntity;
 import com.fci.hotel.service.HotelService.Enties.Hotel;
 
 /**
- * @author deby7 7:44:59 am 2023 HotelService TODO
+ * @author Rajan kumar 7:44:59 am 2023 HotelService TODO
  */
 public interface HotelService {
 
