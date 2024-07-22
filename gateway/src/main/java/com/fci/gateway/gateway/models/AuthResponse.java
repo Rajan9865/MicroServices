@@ -12,6 +12,7 @@ import lombok.Setter;
 
 /**
  * com.fci.gateway.gateway.models DelL
+ * @author rajan kumar
  */
 @Getter
 @Setter

@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 /**
- * @author deby7 6:54:18 am 2023 RatingService TODO
+ * @author Rajan kumar 6:54:18 am 2023 RatingService TODO
  */
 @Getter
 @Setter

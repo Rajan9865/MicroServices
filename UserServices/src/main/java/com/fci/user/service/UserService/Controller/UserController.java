@@ -24,7 +24,7 @@ import io.github.resilience4j.retry.annotation.Retry;
 import lombok.extern.slf4j.Slf4j;
 
 /**
- * @author deby7 7:11:58 am 2023 UserService TODO
+ * @author Rajan kumar 7:11:58 am 2023 UserService TODO
  */
 @Slf4j
 @RestController
@@ -41,7 +41,7 @@ public class UserController {
 	 */
 	@PostMapping
 	public ResponseEntity<User> createUser(@RequestBody User user) {
-		log.info("user create succecessfully {}",user.getName());
+		log.info("user create succecessfully {}", user.getName());
 		return ResponseEntity.status(HttpStatus.CREATED).body(userService.saveUser(user));
 	}
 
@@ -52,10 +52,10 @@ public class UserController {
 	 * @return
 	 */
 //	int retryCount=1;
-	
+
 //	@CircuitBreaker(name = "ratingHotelBreaker", fallbackMethod = "ratingHotelFallback")
 //	@Retry(name = "ratingHotelService",fallbackMethod = "ratingHotelFallback")
-	@RateLimiter(name = "userRateLimiter",fallbackMethod = "ratingHotelFallback")
+	@RateLimiter(name = "userRateLimiter", fallbackMethod = "ratingHotelFallback")
 	@GetMapping("/{userId}")
 	public ResponseEntity<User> getSingleUser(@PathVariable String userId) {
 //		log.info("Retry count : {}",retryCount);
@@ -64,18 +64,16 @@ public class UserController {
 		User user = userService.getUser(userId);
 		return ResponseEntity.ok(user);
 	}
+
 	// Creating fall back methods for circuitBreacker
-	public ResponseEntity<User>ratingHotelFallback(String userid,Exception ex)
-	{
-		log.info(" fallBack is executed because service is down :",ex.getMessage());
+	public ResponseEntity<User> ratingHotelFallback(String userid, Exception ex) {
+		log.info(" fallBack is executed because service is down :", ex.getMessage());
 		ex.printStackTrace();
-		User user = User.builder().email("rajan@gmail.com")
-					  .name("Rajan kumar")
-					  .about("this user is created dummy because some service is down")
-					  .userId("12713t17")
-					  .build();
-		return new ResponseEntity<>(user,HttpStatus.BAD_REQUEST);
+		User user = User.builder().email("rajan@gmail.com").name("Rajan kumar")
+				.about("this user is created dummy because some service is down").userId("12713t17").build();
+		return new ResponseEntity<>(user, HttpStatus.BAD_REQUEST);
 	}
+
 	// get all users
 	/**
 	 * 
@@ -86,5 +84,5 @@ public class UserController {
 		List<User> allUser = userService.getAllUser();
 		return ResponseEntity.ok(allUser);
 	}
-	
+
 }

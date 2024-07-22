@@ -19,7 +19,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 /**
- * @author deby7 11:12:45 pm 2023 UserService TODO
+ * @author Rajan kumar 11:12:45 pm 2023 UserService TODO
  */
 @Entity
 @Table(name = "micro_user")

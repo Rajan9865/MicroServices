@@ -11,6 +11,7 @@ import com.fci.user.service.UserService.entities.Hotel;
 
 /**
  * com.fci.user.service.UserService.external DelL
+ * @author Rajan kumar
  */
 @FeignClient(name = "HOTEL-SERVICE")
 public interface HotelService {
