@@ -8,7 +8,7 @@ import java.util.List;
 import com.fci.user.service.UserService.entities.User;
 
 /**
- * @author deby7 11:22:41 pm 2023 UserService TODO
+ * @author Rajan kumar 11:22:41 pm 2023 UserService TODO
  */
 public interface UserService {
 

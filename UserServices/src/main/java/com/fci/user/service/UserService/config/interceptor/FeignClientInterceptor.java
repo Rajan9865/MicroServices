@@ -14,7 +14,7 @@ import feign.RequestTemplate;
 
 /**
  * com.fci.user.service.UserService.config.interceptor
- *DelL
+ *@author Rajan kumar
  */
 @Configuration
 @Component

@@ -25,7 +25,7 @@ import com.fci.user.service.UserService.config.interceptor.RestTemplateIntercept
 import lombok.extern.slf4j.Slf4j;
 
 /**
- * @author deby7 7:44:22 am 2023 UserService TODO
+ * @author Rajan kumar 7:44:22 am 2023 UserService TODO
  */
 @Slf4j
 @Configuration

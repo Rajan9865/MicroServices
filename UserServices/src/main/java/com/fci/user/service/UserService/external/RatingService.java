@@ -16,6 +16,7 @@ import com.fci.user.service.UserService.entities.Rating;
 /**
  * com.fci.user.service.UserService.external
  *DelL
+ *@author Rajan kumar
  */
 @Service
 @FeignClient(name = "RATING-SERVICE")

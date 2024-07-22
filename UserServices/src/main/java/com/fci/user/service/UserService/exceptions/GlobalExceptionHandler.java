@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 import com.fci.user.service.UserService.payload.ApiResponse;
 
 /**
- * @author deby7 11:59:39 pm 2023 UserService TODO
+ * @author Rajan kumar 11:59:39 pm 2023 UserService TODO
  */
 @RestControllerAdvice
 public class GlobalExceptionHandler {
