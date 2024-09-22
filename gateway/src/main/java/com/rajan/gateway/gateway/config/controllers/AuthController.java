@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.fci.gateway.gateway.config.controllers;
+package com.rajan.gateway.gateway.config.controllers;
 
 import java.util.List;
 import java.util.logging.Logger;
@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.fci.gateway.gateway.models.AuthResponse;
+import com.rajan.gateway.gateway.models.AuthResponse;
 
 import lombok.extern.slf4j.Slf4j;
 

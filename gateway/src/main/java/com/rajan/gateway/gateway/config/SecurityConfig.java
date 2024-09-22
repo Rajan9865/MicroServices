@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.fci.gateway.gateway.config;
+package com.rajan.gateway.gateway.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

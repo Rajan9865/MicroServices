@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.fci.gateway.gateway.models;
+package com.rajan.gateway.gateway.models;
 
 import java.util.Collection;
 
