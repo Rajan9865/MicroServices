@@ -17,7 +17,7 @@ import org.springframework.security.oauth2.client.OAuth2AuthorizedClientManager;
 import lombok.extern.slf4j.Slf4j;
 
 /**
- * com.fci.user.service.UserService.config.interceptor DelL
+ * com.rajan.user.service.UserService.config.interceptor DelL
  * @author Rajan kumar
  */
 @Slf4j

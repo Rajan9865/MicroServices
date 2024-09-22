@@ -13,7 +13,7 @@ import feign.RequestInterceptor;
 import feign.RequestTemplate;
 
 /**
- * com.fci.user.service.UserService.config.interceptor
+ * com.rajan.user.service.UserService.config.interceptor
  *@author Rajan kumar
  */
 @Configuration

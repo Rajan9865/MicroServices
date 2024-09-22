@@ -14,8 +14,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import com.fci.user.service.UserService.entities.Rating;
 
 /**
- * com.fci.user.service.UserService.external
- *DelL
+ * com.rajan.user.service.UserService.external
  *@author Rajan kumar
  */
 @Service

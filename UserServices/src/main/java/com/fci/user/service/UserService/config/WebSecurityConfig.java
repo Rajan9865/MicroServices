@@ -12,7 +12,7 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.web.SecurityFilterChain;
 
 /**
- * com.fci.user.service.UserService.config
+ * com.rajan.user.service.UserService.config
  *@author Rajan kumar
  */
 @Configuration
