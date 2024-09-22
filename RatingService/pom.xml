@@ -7,7 +7,7 @@
 		<version>2.7.15</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.fci.hotel.service.RatingService</groupId>
+	<groupId>com.rajan.hotel.service.RatingService</groupId>
 	<artifactId>RatingService</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>RatingService</name>

@@ -1,11 +1,11 @@
 /**
  * 
  */
-package com.fci.hotel.service.RatingService.RatingService.services;
+package com.rajan.hotel.service.RatingService.RatingService.services;
 
 import java.util.List;
 
-import com.fci.hotel.service.RatingService.RatingService.entity.Rating;
+import com.rajan.hotel.service.RatingService.RatingService.entity.Rating;
 
 /**
  * @author Rajan kumar 7:06:23 am 2023 RatingService TODO
