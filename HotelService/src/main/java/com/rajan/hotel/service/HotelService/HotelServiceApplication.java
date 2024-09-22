@@ -1,4 +1,4 @@
-package com.fci.hotel.service.HotelService;
+package com.rajan.hotel.service.HotelService;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.fci.hotel.service.HotelService.controller;
+package com.rajan.hotel.service.HotelService.controller;
 
 import java.util.List;
 import java.util.Optional;
@@ -17,9 +17,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.fci.hotel.service.HotelService.Enties.Hotel;
-import com.fci.hotel.service.HotelService.repositories.HotelRepository;
-import com.fci.hotel.service.HotelService.services.HotelService;
+import com.rajan.hotel.service.HotelService.Enties.Hotel;
+import com.rajan.hotel.service.HotelService.repositories.HotelRepository;
+import com.rajan.hotel.service.HotelService.services.HotelService;
 
 /**
  * @author Rajan kumar

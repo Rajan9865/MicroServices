@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.fci.hotel.service.HotelService.Enties;
+package com.rajan.hotel.service.HotelService.Enties;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

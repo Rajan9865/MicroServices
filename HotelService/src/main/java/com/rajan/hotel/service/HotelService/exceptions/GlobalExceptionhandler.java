@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.fci.hotel.service.HotelService.exceptions;
+package com.rajan.hotel.service.HotelService.exceptions;
 
 import java.util.HashMap;
 import java.util.Map;
