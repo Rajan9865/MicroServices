@@ -1,4 +1,4 @@
-package com.fci.ServiceRegistory.ServiceRegistory;
+package com.rajan.ServiceRegistory.ServiceRegistory;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
