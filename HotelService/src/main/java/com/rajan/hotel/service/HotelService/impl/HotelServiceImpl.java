@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.fci.hotel.service.HotelService.impl;
+package com.rajan.hotel.service.HotelService.impl;
 
 import java.util.List;
 import java.util.Optional;
@@ -12,10 +12,10 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
-import com.fci.hotel.service.HotelService.Enties.Hotel;
-import com.fci.hotel.service.HotelService.exceptions.ResourceNotFoundException;
-import com.fci.hotel.service.HotelService.repositories.HotelRepository;
-import com.fci.hotel.service.HotelService.services.HotelService;
+import com.rajan.hotel.service.HotelService.Enties.Hotel;
+import com.rajan.hotel.service.HotelService.exceptions.ResourceNotFoundException;
+import com.rajan.hotel.service.HotelService.repositories.HotelRepository;
+import com.rajan.hotel.service.HotelService.services.HotelService;
 
 /**
  * @author Rajan kumar 7:49:31 am 2023 HotelService TODO

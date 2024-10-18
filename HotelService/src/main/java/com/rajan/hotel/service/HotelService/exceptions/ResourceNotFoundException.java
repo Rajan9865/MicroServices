@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.fci.hotel.service.HotelService.exceptions;
+package com.rajan.hotel.service.HotelService.exceptions;
 
 /**
  * @author Rajan kumar 7:57:58 am 2023 HotelService TODO

@@ -1,4 +1,4 @@
-package com.fci.hotel.service.HotelService;
+package com.rajan.hotel.service.HotelService;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

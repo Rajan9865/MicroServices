@@ -1,13 +1,13 @@
 /**
  * 
  */
-package com.fci.hotel.service.HotelService.services;
+package com.rajan.hotel.service.HotelService.services;
 
 import java.util.List;
 
 import org.springframework.http.ResponseEntity;
 
-import com.fci.hotel.service.HotelService.Enties.Hotel;
+import com.rajan.hotel.service.HotelService.Enties.Hotel;
 
 /**
  * @author Rajan kumar 7:44:59 am 2023 HotelService TODO
