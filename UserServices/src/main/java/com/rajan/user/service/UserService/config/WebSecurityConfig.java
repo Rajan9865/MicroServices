@@ -1,7 +1,7 @@
   /**
  * 
  */
-package com.fci.user.service.UserService.config;
+package com.rajan.user.service.UserService.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

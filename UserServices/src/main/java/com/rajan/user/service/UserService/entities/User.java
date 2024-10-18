@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.fci.user.service.UserService.entities;
+package com.rajan.user.service.UserService.entities;
 
 import java.util.ArrayList;
 import java.util.List;

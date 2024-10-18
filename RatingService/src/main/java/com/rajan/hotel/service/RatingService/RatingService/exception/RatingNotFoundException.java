@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.fci.hotel.service.RatingService.RatingService.exception;
+package com.rajan.hotel.service.RatingService.RatingService.exception;
 
 /**
  * @author Rajan kumar

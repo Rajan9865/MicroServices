@@ -1,11 +1,11 @@
 /**
  * 
  */
-package com.fci.user.service.UserService.reposiories;
+package com.rajan.user.service.UserService.reposiories;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.fci.user.service.UserService.entities.User;
+import com.rajan.user.service.UserService.entities.User;
 
 /**
  * @author Rajan.kumar 11:18:37 pm 2023 UserService TODO

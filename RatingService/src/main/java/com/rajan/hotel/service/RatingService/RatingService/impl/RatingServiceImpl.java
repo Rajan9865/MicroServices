@@ -1,17 +1,17 @@
 /**
  * 
  */
-package com.fci.hotel.service.RatingService.RatingService.impl;
+package com.rajan.hotel.service.RatingService.RatingService.impl;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.fci.hotel.service.RatingService.RatingService.entity.Rating;
-import com.fci.hotel.service.RatingService.RatingService.exception.RatingNotFoundException;
-import com.fci.hotel.service.RatingService.RatingService.repository.RatingRepository;
-import com.fci.hotel.service.RatingService.RatingService.services.RatingService;
+import com.rajan.hotel.service.RatingService.RatingService.entity.Rating;
+import com.rajan.hotel.service.RatingService.RatingService.exception.RatingNotFoundException;
+import com.rajan.hotel.service.RatingService.RatingService.repository.RatingRepository;
+import com.rajan.hotel.service.RatingService.RatingService.services.RatingService;
 
 /**
  * @author Rajan kumar 7:11:56 am 2023 RatingService TODO

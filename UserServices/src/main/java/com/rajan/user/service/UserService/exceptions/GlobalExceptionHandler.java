@@ -1,14 +1,14 @@
 /**
  * 
  */
-package com.fci.user.service.UserService.exceptions;
+package com.rajan.user.service.UserService.exceptions;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
-import com.fci.user.service.UserService.payload.ApiResponse;
+import com.rajan.user.service.UserService.payload.ApiResponse;
 
 /**
  * @author Rajan kumar 11:59:39 pm 2023 UserService TODO

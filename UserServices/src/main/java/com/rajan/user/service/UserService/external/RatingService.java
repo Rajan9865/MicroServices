@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.fci.user.service.UserService.external;
+package com.rajan.user.service.UserService.external;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.http.ResponseEntity;
@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 
-import com.fci.user.service.UserService.entities.Rating;
+import com.rajan.user.service.UserService.entities.Rating;
 
 /**
  * com.rajan.user.service.UserService.external

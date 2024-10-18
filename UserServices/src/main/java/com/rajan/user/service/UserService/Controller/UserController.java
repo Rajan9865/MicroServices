@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.fci.user.service.UserService.Controller;
+package com.rajan.user.service.UserService.Controller;
 
 import java.util.List;
 
@@ -15,8 +15,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.fci.user.service.UserService.entities.User;
-import com.fci.user.service.UserService.service.UserService;
+import com.rajan.user.service.UserService.entities.User;
+import com.rajan.user.service.UserService.service.UserService;
 
 import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
 import io.github.resilience4j.ratelimiter.annotation.RateLimiter;

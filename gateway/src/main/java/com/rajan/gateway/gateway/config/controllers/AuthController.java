@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.fci.gateway.gateway.config.controllers;
+package src.main.java.com.rajan.gateway.gateway.config.controllers;
 
 import java.util.List;
 import java.util.logging.Logger;

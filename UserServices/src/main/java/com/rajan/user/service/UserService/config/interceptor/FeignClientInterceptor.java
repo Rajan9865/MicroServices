@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.fci.user.service.UserService.config.interceptor;
+package com.rajan.user.service.UserService.config.interceptor;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;

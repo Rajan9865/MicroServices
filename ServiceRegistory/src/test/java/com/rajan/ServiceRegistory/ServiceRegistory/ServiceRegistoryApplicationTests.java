@@ -1,4 +1,4 @@
-package com.fci.ServiceRegistory.ServiceRegistory;
+package com.rajan.ServiceRegistory.ServiceRegistory;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

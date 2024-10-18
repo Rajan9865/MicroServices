@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.fci.hotel.service.RatingService.RatingService.controller;
+package com.rajan.hotel.service.RatingService.RatingService.controller;
 
 import java.util.List;
 
@@ -15,8 +15,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.fci.hotel.service.RatingService.RatingService.entity.Rating;
-import com.fci.hotel.service.RatingService.RatingService.services.RatingService;
+import com.rajan.hotel.service.RatingService.RatingService.entity.Rating;
+import com.rajan.hotel.service.RatingService.RatingService.services.RatingService;
 
 /**
  * @author Rajan kumar 7:38:47 am 2023 RatingService TODO

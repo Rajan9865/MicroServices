@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.fci.hotel.service.RatingService.RatingService.entity;
+package com.rajan.hotel.service.RatingService.RatingService.entity;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;

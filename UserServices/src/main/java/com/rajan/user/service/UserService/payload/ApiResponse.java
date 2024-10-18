@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.fci.user.service.UserService.payload;
+package com.rajan.user.service.UserService.payload;
 
 import org.springframework.http.HttpStatus;
 

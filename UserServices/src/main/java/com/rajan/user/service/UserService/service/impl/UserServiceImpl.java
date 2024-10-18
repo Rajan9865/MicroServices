@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.fci.user.service.UserService.service.impl;
+package com.rajan.user.service.UserService.service.impl;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -18,14 +18,14 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.client.ResourceAccessException;
 import org.springframework.web.client.RestTemplate;
 
-import com.fci.user.service.UserService.entities.Hotel;
-import com.fci.user.service.UserService.entities.Rating;
-import com.fci.user.service.UserService.entities.User;
-import com.fci.user.service.UserService.exceptions.ResourceNotFoundException;
-import com.fci.user.service.UserService.external.HotelService;
-import com.fci.user.service.UserService.payload.ApiResponse;
-import com.fci.user.service.UserService.reposiories.UserRepository;
-import com.fci.user.service.UserService.service.UserService;
+import com.rajan.user.service.UserService.entities.Hotel;
+import com.rajan.user.service.UserService.entities.Rating;
+import com.rajan.user.service.UserService.entities.User;
+import com.rajan.user.service.UserService.exceptions.ResourceNotFoundException;
+import com.rajan.user.service.UserService.external.HotelService;
+import com.rajan.user.service.UserService.payload.ApiResponse;
+import com.rajan.user.service.UserService.reposiories.UserRepository;
+import com.rajan.user.service.UserService.service.UserService;
 
 import lombok.extern.slf4j.Slf4j;
 

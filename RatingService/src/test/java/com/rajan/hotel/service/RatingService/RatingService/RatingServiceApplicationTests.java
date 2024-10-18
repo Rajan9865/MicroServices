@@ -1,4 +1,4 @@
-package com.fci.hotel.service.RatingService.RatingService;
+package com.rajan.hotel.service.RatingService.RatingService;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

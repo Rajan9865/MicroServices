@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.fci.user.service.UserService.config.interceptor;
+package com.rajan.user.service.UserService.config.interceptor;
 
 import java.io.IOException;
 import java.util.logging.Logger;

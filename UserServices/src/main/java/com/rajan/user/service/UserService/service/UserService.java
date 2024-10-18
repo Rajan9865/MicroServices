@@ -1,11 +1,11 @@
 /**
  * 
  */
-package com.fci.user.service.UserService.service;
+package com.rajan.user.service.UserService.service;
 
 import java.util.List;
 
-import com.fci.user.service.UserService.entities.User;
+import com.rajan.user.service.UserService.entities.User;
 
 /**
  * @author Rajan kumar 11:22:41 pm 2023 UserService TODO

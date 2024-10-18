@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.fci.user.service.UserService.config;
+package com.rajan.user.service.UserService.config;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,7 +20,7 @@ import org.springframework.security.oauth2.client.web.DefaultOAuth2AuthorizedCli
 import org.springframework.security.oauth2.client.web.OAuth2AuthorizedClientRepository;
 import org.springframework.web.client.RestTemplate;
 
-import com.fci.user.service.UserService.config.interceptor.RestTemplateInterceptor;
+import com.rajan.user.service.UserService.config.interceptor.RestTemplateInterceptor;
 
 import lombok.extern.slf4j.Slf4j;
 
